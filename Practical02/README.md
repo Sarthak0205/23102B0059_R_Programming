@@ -4,29 +4,22 @@
 
 To perform data cleaning and advanced missing data handling in R using real-world datasets.
 
----
-
 ## Lab 3 – Heart Disease Data Cleaning
 
 ### Dataset
 
-**Cleveland Heart Disease Dataset**
+Cleveland Heart Disease Dataset
 
 ### Tasks Performed
 
 - Imported and inspected the dataset.
 - Examined the structure and dimensions of the data.
 - Identified invalid and missing blood pressure values.
-- Detected:
-  - Negative blood pressure values
-  - Missing blood pressure values
-  - Extremely high blood pressure values
+- Detected negative, missing, and extreme blood pressure values.
 - Calculated the median blood pressure.
 - Replaced invalid and missing blood pressure values using the median.
-- Performed cleaning using both:
-  - Conditional/vector-based approach
-  - Vectorized approach
-- Performed final validation of the cleaned blood pressure column.
+- Performed vectorized data cleaning.
+- Performed final validation of the cleaned data.
 
 ### Final Validation
 
@@ -34,8 +27,8 @@ To perform data cleaning and advanced missing data handling in R using real-worl
 |---|---:|
 | Missing BP values | 0 |
 | Negative BP values | 0 |
-| Maximum BP | 200 |
 | Minimum BP | 94 |
+| Maximum BP | 200 |
 | Mean BP | 131.6832 |
 | Median BP | 130 |
 
@@ -45,32 +38,25 @@ To perform data cleaning and advanced missing data handling in R using real-worl
 - `Lab3/processed.cleveland.data` – Original dataset
 - `Lab3/cleaned_heart_data.csv` – Cleaned dataset
 
----
-
 ## Lab 4 – Advanced Missing Data Handling
 
 ### Dataset
 
-**UCI Adult Income Dataset**
+UCI Adult Income Dataset
 
 ### Tasks Performed
 
-- Imported the Adult dataset and assigned column names.
-- Inspected dataset structure and dimensions.
-- Demonstrated different types of missing values:
-  - `NA`
-  - `NULL`
-  - `NaN`
-  - Blank strings
-- Deliberately introduced missing and invalid values for testing.
+- Imported and inspected the Adult dataset.
+- Assigned column names to the dataset.
+- Demonstrated `NA`, `NULL`, `NaN`, and blank strings.
+- Introduced missing and invalid values for testing.
 - Generated variable-wise missing-value summaries.
 - Used the `naniar` package for missing-value analysis.
-- Identified impossible age values (`999`).
-- Replaced impossible values with `NA`.
+- Detected and corrected impossible age values (`999`).
 - Replaced blank categorical values with `"Unknown"`.
 - Handled missing categorical values.
-- Created a custom median-imputation function for numeric variables.
-- Replaced missing/`NaN` numeric values using median imputation.
+- Created a custom median-imputation function.
+- Replaced missing and `NaN` numeric values using median imputation.
 - Compared complete cases before and after cleaning.
 - Visualized missingness before and after cleaning.
 - Exported the cleaned dataset.
@@ -90,17 +76,16 @@ To perform data cleaning and advanced missing data handling in R using real-worl
 - `Lab4/adult.data` – Original dataset
 - `Lab4/cleaned_adult_data.csv` – Cleaned dataset
 - `Lab4/missing_summary.csv` – Missing-value summary
-- `Lab4/missingness_before.png` – Missingness visualization before cleaning
-- `Lab4/missingness_after.png` – Missingness visualization after cleaning
-
----
+- `Lab4/missingness_before.png` – Missingness before cleaning
+- `Lab4/missingness_after.png` – Missingness after cleaning
 
 ## Tools Used
 
 - R
 - RStudio
 - `naniar`
-- Git & GitHub
+- Git
+- GitHub
 
 ## Key Concepts
 
