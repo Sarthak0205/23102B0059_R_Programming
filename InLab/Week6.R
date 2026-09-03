@@ -88,6 +88,7 @@ abc(3)
 abc(6)
 abc(9)
 
+
 abc <- function(x, y) {
   x^2 + y^2
 }
@@ -123,4 +124,9 @@ seq(from =10,to=20,by=2)
 seq(from=20,to=10,by=-2)
 seq(from=3,to=-2,by=-0.5)
 
-seq(=10,length=10)
+seq(from=10,length=10)
+seq(to=10,length=10)
+
+
+seq(from=10,length=10,by=0.1)
+
